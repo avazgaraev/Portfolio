@@ -1,0 +1,605 @@
+﻿
+@{
+    Layout = null;
+}
+@using WebApplication17.Models;
+@model List<cardd>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Name of your web site">
+    <meta name="author" content="Marketify">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="~/Content/css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/dark.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css" />
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="loader_line"></div>
+    </div>
+    <div class="tokyo_tm_all_wrap" data-magic-cursor="" data-color="black">
+        <div class="tokyo_tm_modalbox">
+            <div class="box_inner">
+                <div class="close" style="position: relative!important">
+                    <a href="#"><img class="svg" src="../Content/img/svg/cancel.svg" alt="" /></a>
+                </div>
+                <div class="description_wrap"></div>
+            </div>
+        </div>
+        <div class="tokyo_tm_modalbox_about">
+            <div class="box_inner">
+                <div class="close">
+                    <a href="#"><img class="svg" src="~/Content/img/svg/cancel.svg" alt="" /></a>
+                </div>
+                <div class="description_wrap">
+                    <div class="my_box">
+                        <div class="left">
+                            <div class="about_title">
+                                <h3>Programming Skills</h3>
+                            </div>
+                            <div class="tokyo_progress">
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">HTML, CSS, Bootstrap</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="95">
+                                    <span><span class="label">Javascript, jQuery</span><span class="number">95%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">MsSql, SQL Database</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">c#</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">c# Asp.Net, c# Asp.Net Core</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">c# MVC</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">Web API</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">JSON with fetch API</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="about_title">
+                                <h3>Language Skills</h3>
+                            </div>
+                            <div class="tokyo_progress">
+                                <div class="progress_inner" data-value="90">
+                                    <span><span class="label">English</span><span class="number">90%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value="100">
+                                    <span><span class="label">Turkish</span><span class="number">100%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+                                <div class="progress_inner" data-value=60">
+                                    <span><span class="label">Russian</span><span class="number">60%</span></span>
+                                    <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tokyo_tm_mobile_menu">
+            <div class="menu_inner">
+                <div class="logo">
+                    <img src="../Content/img/logo/dark.png" alt="" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home"><img class="svg" src="~/Content/img/svg/home-run.svg" alt="" /></a></li>
+                        <li><a href="#about"><img class="svg" src="~/Content/img/svg/avatar.svg" alt="" /></a></li>
+                        @*<li><a href="#portfolio"><img class="svg" src="~/Content/img/svg/briefcase.svg" alt="" /></a></li>*@
+                        <li><a href="#news"><img class="svg" src="~/Content/img/svg/paper.svg" alt="" /></a></li>
+                        <li><a href="#contact"><img class="svg" src="~/Content/img/svg/mail.svg" alt="" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="leftpart">
+            <div class="leftpart_inner">
+                <div class="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        @*<li><a href="#portfolio">Portfolio</a></li>*@
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="rightpart">
+            <div class="rightpart_in">
+
+                <div id="home" class="tokyo_tm_section active">
+                    <div class="container">
+                        <div class="tokyo_tm_home">
+                            <div class="home_content">
+                                <div class="avatar">
+                                    <div class="image" data-img-url="../Content/img/slider/cve.jpeg"></div>
+                                </div>
+                                <div class="details">
+                                    <h3 class="name">Avaz <span>Qarayev</span></h3>
+                                    <p class="job">Full Stack Web Developer</p>
+                                    <div class="social">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/profile.php?id=100009636330797"><img class="svg" src="~/Content/img/svg/social/facebook.svg" alt="" /></a></li>
+                                            <li><a href="https://www.instagram.com/avazgaraev"><img class="svg" src="~/Content/img/svg/social/instagram.svg" alt="" /></a></li>
+                                            <li><a href="https://www.linkedin.com/in/avaz-garayev-658ba0214"><img class="svg" src="~/Content/img/svg/social/in.png" alt="" /></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="tokyo_tm_section">
+                    <div class="container">
+                        <div class="tokyo_tm_about">
+                            <div class="about_image">
+                                <img src="../Content/img/thumbs/about2.jpeg" alt="">
+                                <div class="main" data-img-url="../Content/img/thumbs/about2.jpeg" style="background-image: url(&quot;img/slider/1.jpg&quot;);"></div>
+                            </div>
+                            <div class="description">
+                                <h3 class="name">Avaz Qarayev &amp; <span>Web Developer</span></h3>
+                                <div class="description_inner">
+                                    <div class="left">
+                                        <p>Hello, I am a full stack web developer. So first i want to start with my education. I'm studing at Azerbaijan State Oil and Industry University, BBA | Information Technology. Then about course, I have full stack certification from Milli-Soft. You can see that with <p class="leftayri"><a class="inlinea" href="~/Content/img/slider/cert.jpeg" target="_blank">click</a></p>. I can talk about also my experience on this job, I have had some jobs freelance on platform Upwork. For other experience, you can check <p class="leftayri"><a class="inlinea" href="https://www.facebook.com/profile.php?id=100009636330797" target="_blank">my Facebook</a></p>. However I havn't work only online, i also worked on real projects, you can see them on <p class="leftayri"><a class="inlinea" href="https://github.com/avazgaraev" target="_blank">my github</a>.</p>
+                                        <div class="tokyo_tm_button">
+                                            <a href="#">Learn More</a>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <ul>
+                                            <li><p><span>Birthday:</span>28.06.2002</p></li>
+                                            <li><p><span>Address:</span>Azerbaijan, Baku city, Garadagh country</p></li>
+                                            <li><p><span>Email:</span><a href="mailto:avazgarayev@gmail.com"><span class="__cf_email__" data-cfemail="8be6eae2e7cbece6eae2e7a5e8e4e6">[email&#160;protected]</span></a></p></li>
+                                            <li><p><span>Phone:</span><a href="tel:+994558934273">(+99455) 893 4273</a></p></li>
+                                            <li><p><span>Study:</span>Azerbaijan State Oil And Industry University</p></li>
+                                            <li><p><span>Freelance:</span>Available</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tokyo_tm_portfolio_titles"></div>
+                <div id="portfolio" class="tokyo_tm_section">
+                    <div class="container">
+                        <div class="tokyo_tm_portfolio">
+                            <div class="tokyo_tm_title">
+                                <div class="title_flex">
+                                    <div class="left">
+                                        <span>Portfolio</span>
+                                        <h3>Creative Portfolio</h3>
+                                    </div>
+                                    <div class="portfolio_filter">
+                                        <ul>
+                                            <li><a href="#" class="current" data-filter="*">All</a></li>
+                                            <li><a href="#" data-filter=".vimeo">Vimeo</a></li>
+                                            <li><a href="#" data-filter=".youtube">Youtube</a></li>
+                                            <li><a href="#" data-filter=".soundcloud">Soundcloud</a></li>
+                                            <li><a href="#" data-filter=".image">Image</a></li>
+                                            <li><a href="#" data-filter=".detail">Detail</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_wrapper">
+                                <ul class="portfolio_list gallery_zoom">
+                                    <li class="vimeo">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Teresa Butler" data-category="Vimeo">
+                                                <a class="popup-vimeo" href="https://vimeo.com/312334044">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/5.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="youtube">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Ashley Flores" data-category="Youtube">
+                                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=Amq-qlqbjYA">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/6.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="soundcloud">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Derek Smith" data-category="Soundcloud">
+                                                <a class="soundcloude_link mfp-iframe audio" href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/4.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="image">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Gloria Jenkins" data-category="Image">
+                                                <a class="zoom" href="~/Content/img/portfolio/3.jpg">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/3.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="detail">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Selena Gomez" data-category="Detail">
+                                                <a class="popup_info" href="#">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/7.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="details_all_wrap">
+                                            <div class="popup_details">
+                                                <div class="top_image"></div>
+                                                <div class="portfolio_main_title"></div>
+                                                <div class="main_details">
+                                                    <div class="textbox">
+                                                        <p>We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.</p>
+                                                        <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.</p>
+                                                    </div>
+                                                    <div class="detailbox">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="first">Client</span>
+                                                                <span>Alvaro Morata</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Category</span>
+                                                                <span><a href="#">Detail</a></span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Date</span>
+                                                                <span>March 07, 2021</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Share</span>
+                                                                <ul class="share">
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/facebook.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/twitter.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/instagram.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/dribbble.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/tik-tok.svg" alt="" /></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="additional_images">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="~/Content/img/portfolio/1.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="~/Content/img/portfolio/2.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="~/Content/img/portfolio/3.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="detail">
+                                        <div class="inner">
+                                            <div class="entry tokyo_tm_portfolio_animation_wrap" data-title="Ave Simone" data-category="Detail">
+                                                <a class="popup_info" href="#">
+                                                    <img src="../Content/img/thumbs/1-1.jpg" alt="" />
+                                                    <div class="main_image" data-img-url="~/Content/img/portfolio/8.jpg"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="details_all_wrap">
+                                            <div class="popup_details">
+                                                <div class="top_image"></div>
+                                                <div class="portfolio_main_title"></div>
+                                                <div class="main_details">
+                                                    <div class="textbox">
+                                                        <p>We live in a world where we need to move quickly and iterate on our ideas as flexibly as possible. Building mockups strikes the ideal balance between true-life representation of the end product and ease of modification.</p>
+                                                        <p>Mockups are useful both for the creative phase of the project - for instance when you're trying to figure out your user flows or the proper visual hierarchy - and the production phase when they will represent the target product. Making mockups a part of your creative and development process allows you to quickly and easily ideate.</p>
+                                                    </div>
+                                                    <div class="detailbox">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="first">Client</span>
+                                                                <span>Alvaro Morata</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Category</span>
+                                                                <span><a href="#">Detail</a></span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Date</span>
+                                                                <span>March 07, 2021</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="first">Share</span>
+                                                                <ul class="share">
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/facebook.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/twitter.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/instagram.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/dribbble.svg" alt="" /></a></li>
+                                                                    <li><a href="#"><img class="svg" src="~/Content/img/svg/social/tik-tok.svg" alt="" /></a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="additional_images">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="../Content/img/portfolio/1.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="~/Content/img/portfolio/2.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="list_inner">
+                                                                <div class="my_image">
+                                                                    <img src="../Content/img/thumbs/4-2.jpg" alt="" />
+                                                                    <div class="main" data-img-url="~/Content/img/portfolio/3.jpg"></div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /PORTFOLIO -->
+                <!-- NEWS -->
+                <div id="news" class="tokyo_tm_section">
+                    <div class="container">
+                        <div class="tokyo_tm_news">
+                            <div class="tokyo_tm_title">
+                                <div class="title_flex">
+                                    <div class="left">
+                                        <span>News</span>
+                                        <h3>Latest News</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+
+
+                                        @foreach (var item in Model)
+                                        {
+                                            
+                                            <li>
+                                                <div class="list_inner">
+
+                                                        <div class="image">
+                                                            <img src="../Content/img/news/@item.cardimg" alt="" style="margin-top:-200px;" />
+                                                            <div class="main" data-img-url=../Content/img/news/@item.cardimg></div>
+                                                            <a class="tokyo_tm_full_link" href="#"></a>
+                                                        </div>
+                                                        <div class="details">
+                                                            <div class="extra">
+                                                                <div class="short">
+                                                                    <p class="date">By Avaz Qarayev <span>15 Feb 2021</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="title"><a href="#">@item.cardname</a></h3>
+                                                            <div class="tokyo_tm_read_more">
+                                                                <a href="#"><span>Read More</span></a>
+                                                            </div>
+                                                        </div>
+                                
+                                                        <div class="main_content">
+                                                            <div class="descriptions">
+                                                                <p class="bigger">@item.carddefbig</p>
+                                                                <p>@item.carddef1</p>
+                                                                <p>@item.carddef2</p>
+                                                                <div class="quotebox">
+                                                                    <div class="icon">
+                                                                        <img class="svg" src="../Content/img/svg/quote.svg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                                <p><a class="gmdib" target="_blank" href="@item.cardlink">@item.cardendname</a></p>
+                                                            </div>
+                                                            <div class="news_share">
+                                                                <span>Share:</span>
+                                                                <ul>
+                                                                    <li><div id="fb-root"></div><div class="fb-share-button" data-href="@item.cardshare1" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u= + @item.cardshare1" class="fb-xfbml-parse-ignore"><img class="svg" src="~/Content/img/svg/social/facebook.svg" alt="" /></a></div></li>
+                                                                    <li><link rel="canonical" href="https://twitter.com/intent/tweet?text= + @item.cardshare1"> <img class="svg" src="~/Content/img/svg/social/twitter.svg" alt="" /></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </li>
+
+                                            
+                                        }
+                                <li>
+                                    <div class="list_inner">
+                                        <div class="image">
+                                            <img src="~/Content/img/news/github-logo.png" alt="" />
+                                            <div class="main" data-img-url="../Content/img/news/mvmbv.png"></div>
+                                            <a class="tokyo_tm_full_link" href="#"></a>
+                                        </div>
+                                        <div class="details">
+                                            <div class="extra">
+                                                <div class="short">
+                                                    <p class="date">By <a href="#">Avaz Qarayev</a> <span>05 April 2021</span></p>
+                                                </div>
+                                                @*<div class="my_like">
+                                                        <a href="#"><img class="svg" src="~/Content/img/svg/like.svg" alt="" /><span>35</span></a>
+                                                    </div>*@
+                                            </div>
+                                            <h3 class="title"><a href="#">NEW GENERATION OF WEB RAP !</a></h3>
+                                            <div class="tokyo_tm_read_more">
+                                                <a href="#"><span>Read More</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="main_content">
+                                            <div class="descriptions">
+                                                <p class="bigger">There are a few web pages about rap music on the internet, however most of them don't follow rap trend. So that is the my way to provide MY RAP WORLD.</p>
+                                                <p>On the index page, first You meet with Menu, there are enough counts of rap music sections you can check, even POP, and also you can look at new generation music, even if you are also doing music, there is sections that you can send your music to me. </p>
+                                                <p>Then above you can observe hits of the most popular music platforms. And others are my thoughts</p>
+                                                <div class="quotebox">
+                                                    <div class="icon">
+                                                        <img class="svg" src="~/Content/img/svg/quote.svg" alt="" />
+                                                    </div>
+                                                    <p><a class="mambatv" target="_blank" href="https://github.com/avazgaraev/mambatv">Mamba TV</a></p>
+                                                </div>
+                                            </div>
+                                            <div class="news_share">
+                                                <span>Share:</span>
+                                                <ul>
+                                                    <li><div id="fb-root"></div><div class="fb-share-button" data-href="https://github.com/avazgaraev/mambatv" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/avazgaraev/mambatv" class="fb-xfbml-parse-ignore"><img class="svg" src="~/Content/img/svg/social/facebook.svg" alt="" /></a></div></li>
+                                                    <li><link rel="canonical" href="https://twitter.com/intent/tweet?text=https://github.com/avazgaraev/mambatv"><img class="svg" src="~/Content/img/svg/social/twitter.svg" alt="" /></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /NEWS -->
+                <!-- CONTACT -->
+                <div id="contact" class="tokyo_tm_section">
+                    <div class="container">
+                        <div class="tokyo_tm_contact">
+                            <div class="tokyo_tm_title">
+                                <div class="title_flex">
+                                    <div class="left">
+                                        <span>Contact</span>
+                                        <h3>Get in Touch</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map_wrap">
+                                <div id="map"></div>
+                            </div>
+                            <div class="fields">
+                                <form action="https://marketifythemes.net/" method="post" class="contact_form" id="contact_form" autocomplete="off">
+                                    <div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+                                    <div class="empty_notice"><span>Please Fill Required Fields</span></div>
+                                    <div class="first">
+                                        <ul>
+                                            <li>
+                                                <input id="name" type="text" placeholder="Name">
+                                            </li>
+                                            <li>
+                                                <input id="email" type="text" placeholder="Email">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="last">
+                                        <textarea id="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="tokyo_tm_button" data-position="left">
+                                        <a id="send_message" href="#">
+                                            <span>Send Message</span>
+                                        </a>
+                                    </div>
+
+                                    <!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /CONTACT -->
+
+            </div>
+        </div>
+        <!-- /RIGHTPART -->
+        <!-- CURSOR -->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+        <!-- /CURSOR -->
+
+    </div>
+    <!-- / WRAPPER ALL -->
+    <!-- SCRIPTS -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/Content/js/jquery.js"></script>
+    <!--[if lt IE 10]> <script type="text/javascript" src="~/Content/js/ie8.js"></script> <![endif]-->
+    <script src="~/Content/js/plugins.js"></script>
+    <script src="~/Content/js/init.js"></script>
+    
+    <!-- /SCRIPTS -->
+</body>
+
+<!-- Mirrored from marketifythemes.net/html/tokyo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Sep 2021 18:48:31 GMT -->
+</html>
